@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2FA Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>2FA Authenticator</h1>
+    <div class="input-group">
+        <input type="text" id="secret" placeholder="Enter your secret key">
+        <button id="generate-otp">Generate OTP</button>
+    </div>
+    <div class="settings">
+        <div>
+            <label for="digits">Number of Digits:</label>
+            <input type="number" id="digits" value="6" min="6" max="8">
+        </div>
+        <div>
+            <label for="period">Token Period (in seconds):</label>
+            <input type="number" id="period" value="30" min="10" max="60">
+        </div>
+    </div>
+    <div class="progress-bar">
+        <div id="progress" class="progress"></div>
+    </div>
+    <div class="otp-display">
+        <p id="otp"></p>
+        <p id="timer"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

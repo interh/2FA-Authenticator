@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?stars') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    max-width: 500px; /* 最大宽度 */
+    width: 90%; /* 宽度为屏幕宽度的90% */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.input-group, .settings {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 60%; /* 增加输入框的宽度 */
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 35%;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.progress {
+    background-color: #007bff;
+    height: 100%;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.settings div, .input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings label, .input-group label {
+    flex-basis: 40%; /* 标签宽度 */
+}
+
+.settings input, .input-group input {
+    flex-basis: 55%; /* 输入框宽度 */
+    text-align: center;
+}
